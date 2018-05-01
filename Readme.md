@@ -1,6 +1,6 @@
 # BING IMAGE URL service
 
-* Instructions on compiling Go code into a minimal container is taken from here: https://blog.codeship.com/building-minimal-docker-containers-for-go-applications/
+* Instructions on compiling Go code into a minimal container are taken from [here](https://blog.codeship.com/building-minimal-docker-containers-for-go-applications/)
 
 1. `$ CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .`
 2. Copy certs file: `cp /etc/ssl/certs/ca-certificates.crt .`

@@ -13,7 +13,7 @@ import (
 func main() {
 	// Listen on port and reply with bing image url
 	r := gin.Default()
-	r.GET("/bingImgURL", func(c *gin.Context) {
+	r.GET("/bingImgURL/", func(c *gin.Context) {
 		c.String(200, getImageURL())
 	})
 
